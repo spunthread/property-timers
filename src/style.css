@@ -1,0 +1,121 @@
+body {
+  justify-content: center;
+  align-items: stretch;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  max-width: 720px;
+  max-height: 100vh;
+}
+
+.top {
+  flex: 1 1 10%;
+  display: flex;
+  margin: 1vh 0;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mid {
+  flex: 1 1 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.mid::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  margin: 2vh 0;
+  padding: 1vh;
+  display: flex;
+  border: 1px solid lime;
+}
+
+figcaption {
+  font-size: 0.6rem;
+}
+
+img {
+  height: 44px;
+  width: 44px;
+}
+
+figure {
+  flex: 1 1 20%;
+  margin: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inmid {
+  flex: 1 1 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.atend {
+  flex: 1 1 25%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 0.5vw 2vw;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bbtn {
+  color: white;
+  background-color: black;
+}
+
+.rbtn {
+  color: white;
+  background-color: blue;
+}
+
+.mbtn {
+  color: white;
+  background-color: red;
+}
+
+#sbtn {
+  flex: 0.1;
+  height: 4vh;
+  font-size: 1rem;
+  font-weight: bold;
+  color: deepskyblue;
+  background-color: black;
+  border: 1px solid skyblue;
+}
+
+#mspn {
+  flex: 1;
+  height: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
