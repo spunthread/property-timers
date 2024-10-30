@@ -8,8 +8,12 @@ main {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: flex-start;
-  max-width: 720px;
+  max-width: 640px;
   max-height: 100vh;
+}
+
+progress {
+  width: 80%;
 }
 
 .top {
@@ -35,19 +39,20 @@ main {
 }
 
 .item {
-  margin: 2vh 0;
-  padding: 1vh;
+  margin: 1rem 0;
+  padding: 0.4rem;
   display: flex;
   border: 1px solid lime;
 }
 
 figcaption {
   font-size: 0.6rem;
+  text-align: center;
 }
 
 img {
-  height: 44px;
-  width: 44px;
+  height: 64px;
+  width: 64px;
 }
 
 figure {
@@ -60,6 +65,7 @@ figure {
 }
 
 .inmid {
+  margin: 0;
   flex: 1 1 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -68,6 +74,7 @@ figure {
 }
 
 .atend {
+  margin: 0;
   flex: 1 1 25%;
   display: flex;
   flex-flow: column nowrap;
@@ -79,7 +86,6 @@ button {
   outline: none;
   border: none;
   width: 80%;
-  padding: 0.5vw 2vw;
   text-align: center;
   text-decoration: none;
 }
@@ -100,8 +106,7 @@ button {
 }
 
 #sbtn {
-  flex: 0.1;
-  height: 4vh;
+  flex: 1 1 20%;
   font-size: 1rem;
   font-weight: bold;
   color: deepskyblue;
@@ -110,8 +115,7 @@ button {
 }
 
 #mspn {
-  flex: 1;
-  height: 10vh;
+  flex: 1 1 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
