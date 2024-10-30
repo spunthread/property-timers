@@ -29,9 +29,9 @@ const App = () => {
   return (
     <>
       <header className="top">
-        <span id="mspn">${state.bucks.toFixed(2)}</span>
+        <span className="mspn">${state.bucks.toFixed(2)}</span>
         <button
-          id="sbtn"
+          className="sbtn"
           onClick={() => dispatch({ type: "save" })}>
           Save
         </button>
